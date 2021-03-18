@@ -1,0 +1,105 @@
+.header{
+    background-image: url(/img/home.jpg);
+    height: 630px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    margin-left: 170px;
+}
+
+.inner-container{
+    width: 100%;
+    background-color: rgb(23, 45, 66);
+    -webkit-box-shadow: 0px 6px 19px 7px rgba(0,0,0,0.84);
+    -moz-box-shadow: 0px 6px 19px 7px rgba(0,0,0,0.84);
+    box-shadow: 0px 6px 19px 7px rgba(0,0,0,0.84);
+    position: relative;
+}
+
+.nav > ul > li {
+    display: inline-block;
+    margin-left: 140px;
+    margin-top: 20px;
+    width: 200px;
+    height: 25px;
+    text-align: center;
+}
+.nav > ul > li:hover{
+    background-color: white;
+    border-radius: 10px;
+} 
+
+.nav > ul > li:hover > a{
+    color: rgb(30, 56, 78);
+    border-radius: 7px;
+    padding: 3px 10px 5px 10px;
+    transition: all 0.3s ease;
+}
+.nav > ul > li > a {
+    text-decoration: none;
+    color:white;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.icon{
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.icon:hover{
+    background-color: white;
+    color: rgb(30, 56, 78);
+    border-radius: 7px;
+    padding: 3px 10px 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.carousel{
+    float: right;
+    width: 600px;
+    height: 400px;
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+
+footer{
+    width: 100%;
+    background-color: rgb(23, 45, 66);
+    color: white;
+    
+}
+
+footer > .footer-contact > ul {
+    margin-left: 900px;
+}
+
+.links-footer{
+    margin-left: 950px;
+}
+footer > .footer-contact > ul > li{
+    display: block;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 920px){
+    .inner-container{
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 540px){
+    .inner-container{
+        margin-top: 0px;
+    }
+}

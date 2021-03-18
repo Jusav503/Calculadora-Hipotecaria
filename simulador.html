@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+        <title>Mossil</title>
+		<link rel="stylesheet" type="text/css" href="/css/home.css">
+		<link rel="stylesheet" type="text/css" href="/css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="/css/checkbox.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </head>
+	<body>
+		<div class="inner-container">
+
+			<div class="nav">
+			  <ul>
+				<li>
+				  <a href="/simulador.html">Simulador de hipoteca</a>
+				</li>
+			  </ul>
+			  <a href="/home.html"><img class="logo" src="/img/logo.png" width="100px"></a>
+			  <ul>
+				<li>
+				  <a href="">Más información</a>
+				</li>
+			  </ul>
+			</div>
+	
+		</div>
+
+		<div class="results" id="resultado">=></div>
+		<div class="container-simulator">
+			
+			<div class="wrap">
+				<form action="" class="formulario" name="formulario_registro" method="get">
+					<div>
+
+						<p>¿Cuánto cuesta la casa?</p>
+						<div class="input-group">
+							<span><input type="text" name="credito" maxlength=8 placeholder="Ingresa cantidad (€)"></span>
+						</div>
+						<hr>
+
+						<p>¿Cuántos años necesitas para pagar?</p>
+						<div class="input-group">
+							<span><input type="number" name="anos" max="60" placeholder="Años de hipoteca"></span>
+						</div>
+						<hr>
+
+						<P>Tasa de intereses</p>
+						<div class="input-group">
+							<span><input type="text" name="interes" maxlength=4 placeholder="Tasa de interés (%)"></span>
+						</div>
+						<hr>
+
+						<p>Pago inicial</p>
+						<br>
+						<div class="radio">
+							<input type="radio" name="opcion" id="3.5" value="3.5">
+							<label for="3.5">3,5%</label>
+	
+							<input type="radio" name="opcion" id="5" value="5">
+							<label for="5">5%</label>
+	
+							<input type="radio" name="opcion" id="10" value="10">
+							<label for="10">10%</label>
+						</div>
+						<br>
+
+						<div class="d-grid gap-2">
+							<button class="btn btn-primary" type="button" id="btn">Calcular</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+
+		<script src="js/calculos.js"></script>
+		
+	</body>
+</html>
